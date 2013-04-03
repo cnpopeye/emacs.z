@@ -1,0 +1,23 @@
+
+;; ----- smex-history -----
+(
+ dired
+ load-library
+ replace-string
+ emacs-init-time
+ Electric-command-history-redo-expression
+ load-file
+ cd
+)
+
+;; ----- smex-data -----
+(
+ (dired . 7)
+ (load-file . 1)
+ (load-library . 6)
+ (replace-string . 5)
+ (Electric-command-history-redo-expression . 1)
+ (template-new-file . 6)
+ (virtualenv-workon . 1)
+ (emacs-init-time . 1)
+)

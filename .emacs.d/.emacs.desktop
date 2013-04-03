@@ -1,0 +1,40 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Fri Dec 23 10:58:50 2011
+;; Desktop file format version 206
+;; Emacs version 23.2.1
+
+;; Global section:
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("fram" "zc" "Emacs" "tool" "print" "null" "ohuop" "qjj" "flying_zy7911" "flying_zy" "hanyongming" "hrbscs" "cn_popeye" "debug1984" "kandaoliu"))
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/workspace/crontab/gfan_tongji/py/purgeDown_log.py" "~/.emacs" "~/" "~/bin/ec" "~/workspace/crontab/aMarket/py" "~/workspace/crontab/aMarket/py/user_history.log" "~/tmp/www.csdn.net.sql" "~/workspace/crontab/aMarket/py/" "~/workspace/crontab/aMarket/py/cntMarket4MySQL.py" "~/workspace/crontab/aMarket/py/cntMarketmysql.py" "/scp:root@10.16.8.10:/home/data/cron/exclude.txt" "~/workspace/crontab/aMarket/py/ " "~/workspace/crontab/aMarket/py/top100week_month.py" "~/workspace/crontab/aMarket/py/gDBO.py" "~/workspace/crontab/aMarket/py/browser_history.py" "~/workspace/project/test.html" "~/.gvfs/10.16.8.3 ‘ÉÏ‘µÄ movie/Movie-4/‘¹Ö‘ÈË‘¶þ‘Ê®‘Ãæ‘Ïà‘´« K-20.Legend.Of.The.Mask.2008.720p.BluRay.x264.AC3-CMCT/‘¹Ö‘ÈË‘¶þ‘Ê®‘Ãæ‘Ïà‘´«.txt" "~/workspace/project/demo/url.log" "~/workspace/project/demo/" "~/workspace/project/demo/url_map.py" "~/workspace/url.log" "~/workspace/20111209_DR.SQL" "~/workspace/crontab/aMarket/py/exportAppsFileOnly4mysql.py" "~/workspace/crontab/aMarket/py/varArray4MySQL.py" "~/workspace/crontab/aMarket/py/varArray4MySQL.201110525.py" "~/workspace/sanguo.sha" "/root@10.16.8.10:/home/data/cron/exclude.txt" "/root@10.16.8.10L:/home/data/cron/exclude.txt" "~/opt/wallproxy-plus/server/.appcfg_cookies"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/home/zc/workspace/crontab/gfan_tongji/py/purgeDown_log.py"
+  "purgeDown_log.py"
+  'python-mode
+  '(linum-mode hs-minor-mode yas/minor-mode auto-complete-mode ropemacs-mode)
+  1178
+  '(894 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/zc/.emacs"
+  ".emacs"
+  'emacs-lisp-mode
+  '(linum-mode hs-minor-mode yas/minor-mode auto-complete-mode)
+  7815
+  '(289 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+

@@ -1,0 +1,128 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Mon Mar 18 18:54:46 2013
+;; Desktop file format version 206
+;; Emacs version 24.2.1
+
+;; Global section:
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("qid" "host" "log" "db" "print" "check" "checl" "tag-icon" "debu" "mar" "user_de" "user_qpo" "userq" "user_deta" "_html" "fetch_page"))
+(setq regexp-search-ring '("||.+$" "||*^$" "\\.[0-9]\\{4\\}" "[0-9]\\{4\\}" "/$" "Movies-[0-9]*/[^/]*\\.mkv" "Movies-[0-9]\\{2\\}\\/" "/Movies-[0-9][0-9]/[^/]" "/[a-z]+/" "/./.mkv" "/raid/*.mkv"))
+(setq register-alist (list '(13 "" "" "" "" "" "" "") '(114 "‘¼ì‘²é" "‘´¥‘·¢" "   1" "‘Ôò‘£º" "   1") '(51 file-query "/Users/zc/.emacs.d/init-rope.el" 1356) '(50 file-query "/Users/zc/.emacs.d/init-rope.el" 899) '(49 file-query "/Users/zc/.emacs.d/init-rope.el" 164) (list 213465889 "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (list 'lambda '() (list 'set-marker mk nil (get-buffer " *temp*")))) mk)) (list 213465879 "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (list 'lambda '() (list 'set-marker mk nil (get-buffer " *temp*")))) mk))))
+(setq file-name-history '("~/workspace/qudian/qcore/qcore/q/qpoint.py" "~/workspace/qudian/qcore/qcore/qpoint.py" "~/workspace/qudian/qcore" "/Users/zc/workspace/qudian/qcore/qcore/qpoint.py" "~/workspace/qudian/qcity/qcity/u/user.py" "~/workspace/qudian/qcity/qcity/q/qpoint.py" "/Users/zc/workspace/qudian/qcity/qcity/templates/qpoint.html" "/Users/zc/workspace/qudian/qcity/qcity/base_handler.py" "/Users/zc/workspace/qudian/qcity/qcity/qpoint.py" "/Users/zc/workspace/qudian/qfront/ext/chrome/background.js" "/Users/zc/Downloads/crx/huaban/manifest.json" "/Users/zc/workspace/qudian/qfront/ext/chrome/background.js" "/Users/zc/Downloads/crx/huaban/manifest.json" "/Users/zc/workspace/qudian/qfront/ext/chrome/_locales/zh_CN/messages.json" "/Users/zc/workspace/qudian/qfront/ext/chrome/manifest.json" "/Users/zc/workspace/qudian/qfront/Jakefile.js" "/Users/zc/workspace/qudian/qfront/assets/js/ext/chrome/background.js" "/Users/zc/workspace/qudian/qfront/ext/chrome/background.js" "~/workspace/qudian/qfront/ext/chrome/" "/Users/zc/workspace/qudian/qfront/ext/chrome/manifest.json" "/Users/zc/workspace/qudian/qfront/ext/chrome/script.js" "/Users/zc/workspace/qudian/qfront/ext/chrome/background.js" "/Users/zc/workspace/qudian/qfront/ext/chrome/background.html" "/Users/zc/workspace/qudian/qfront/ext/chrome/script.js" "/Users/zc/workspace/qudian/qfront/ext/chrome/background.html" "/Users/zc/workspace/qudian/qfront/ext/chrome/background.js" "/Users/zc/workspace/qudian/qfront/ext/chrome/_locales/en/messages.json" "/Users/zc/workspace/qudian/qfront/ext/chrome/_locales/zh_TW/messages.json" "/Users/zc/workspace/qudian/qfront/ext/chrome/_locales/en/messages.json" "/Users/zc/Downloads/crx/xl/js/xl.js" "/Users/zc/Downloads/crx/xl/manifest.json" "/Users/zc/workspace/qudian/qfront/ext/chrome/_locales/zh_CN/messages.json"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/Users/zc/workspace/qudian/qcity/qcity/u/user.py"
+  "user.py<2>"
+  'python-mode
+  '(linum-mode hs-minor-mode autopair-mode auto-complete-mode flymake-mode outline-minor-mode ropemacs-mode)
+  2210
+  '(1065 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/Users/zc/workspace/qudian/qcity/qcity/q/qpoint.py"
+  "qpoint.py<2>"
+  'python-mode
+  '(linum-mode hs-minor-mode autopair-mode auto-complete-mode flymake-mode outline-minor-mode ropemacs-mode)
+  579
+  '(1247 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/Users/zc/workspace/qudian/qcity/qcity/base_handler.py"
+  "base_handler.py"
+  'python-mode
+  '(linum-mode hs-minor-mode autopair-mode auto-complete-mode flymake-mode outline-minor-mode ropemacs-mode)
+  456
+  '(383 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/zc/Downloads/crx/huaban/README"
+  "README"
+  'text-mode
+  '(linum-mode autopair-mode)
+  191
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/zc/workspace/qudian/qcity/qcity/user.py"
+  "user.py"
+  'python-mode
+  '(linum-mode hs-minor-mode autopair-mode auto-complete-mode flymake-mode outline-minor-mode ropemacs-mode)
+  469
+  '(766 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/Users/zc/workspace/qudian/qcity/qcity/models/db_mongo.py"
+  "db_mongo.py"
+  'python-mode
+  '(linum-mode hs-minor-mode autopair-mode auto-complete-mode flymake-mode outline-minor-mode ropemacs-mode)
+  1852
+  '(1845 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/Users/zc/workspace/qudian/workinfo.z"
+  "workinfo.z"
+  'text-mode
+  '(linum-mode autopair-mode)
+  161
+  '(161 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Applications/Firefox.app/Contents/MacOS/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}/install.rdf"
+  "install.rdf"
+  'nxml-mode
+  '(linum-mode autopair-mode)
+  863
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/zc/workspace/qudian/qcore/qcore/cronjob/update_title_pid.py"
+  "update_title_pid.py"
+  'python-mode
+  '(linum-mode hs-minor-mode autopair-mode auto-complete-mode flymake-mode outline-minor-mode)
+  1004
+  '(613 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/zc/workspace/qudian/qcore/qcore/cronjob/page_extract"
+  "page_extract"
+  'python-mode
+  '(linum-mode hs-minor-mode autopair-mode auto-complete-mode flymake-mode outline-minor-mode)
+  3233
+  '(2962 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+
