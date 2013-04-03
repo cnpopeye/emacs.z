@@ -1,6 +1,15 @@
 *.el[c~#]
 *.*[#~]
 
+.emacs.desktop.lock
+.emacs.desktop
+.session
+.smex-items
+
+# auto-save
+auto-save-list/
+
+
 # Mr Developer
 .mr.developer.cfg
 .project
