@@ -1,4 +1,0 @@
-emacs
-=====
-
-my emacs config
