@@ -45,7 +45,8 @@
                      smex
                      markdown-mode
                      ido-ubiquitous
-                     fuzzy)
+                     fuzzy
+		     epc)
  "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)

@@ -47,9 +47,16 @@
 
 ;;template.el
 (require 'template)
-(template-initialize)
 ;set template dir
-(setq template-default-directories (cons "~/.emacs.d/templates/" template-default-directories)) 
+(setq template-default-directories (cons "~/.emacs.d/templates/" template-default-directories))
+(template-initialize)
+;;  template.el cooperate with ido.el
+;(add-to-list 'template-find-file-commands
+;             'ido-exit-minibuffer)
+
+(dolist (cmd '(ido-select-text ido-magic-forward-char
+                               ido-exit-minibuffer))
+  (add-to-list 'template-find-file-commands cmd))
 
 ;; autocomplete
 ;(add-to-list 'load-path "~/.emacs.d/site-lisp/auto-complete")
@@ -63,17 +70,7 @@
 ;; do what i mean
 (setq ac-dwim t)
 
-;; hack to fix ac-sources after pycomplete.el breaks it
-(add-hook 'python-mode-hook
-          '(lambda()
-             (setq ac-sources '(ac-source-pycomplete
-                                ac-source-abbrev
-                                ac-source-dictionary
-                                ac-source-filename
-                                ac-source-files-in-current-dir
-                                ac-source-words-in-all-buffer
-                                ac-source-words-in-same-mode-buffers))))
-
+                                        
 ;;; git.el git-status
 ;  (add-to-list 'load-path ".../git/contrib/emacs")
 ;(require 'git)
@@ -81,6 +78,9 @@
 
 ;;; python
 (require 'init-python)
+
+;; go
+(require 'init-go)
 
 ;;; haskell
 ;(load "~/.emacs.d/site-lisp/haskell-mode/haskell-site-file")

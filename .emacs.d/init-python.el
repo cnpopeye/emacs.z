@@ -43,62 +43,96 @@
 
 ;; Set up python-mode
 ;(setq py-install-directory (concat user-dir "/python-mode.el-6.0.12/")) 
-(setq py-install-directory (concat user-emacs-directory "site-lisp/python-mode.el-6.1.1/"))
-(add-to-list 'load-path py-install-directory)
+;(setq py-install-directory (concat user-emacs-directory "site-lisp/python-mode.el-6.1.1/"))
+;(add-to-list 'load-path py-install-directory)
 
 ;; this will show method signatures while typing
-(setq py-set-complete-keymap-p t)
+;(setq py-set-complete-keymap-p t)
+;(require 'python-mode)
+
+
+(add-to-list 'load-path "el-get/python-mode/") 
+(setq py-install-directory "el-get/python-mode/")
 (require 'python-mode)
 
-;; activate the virtualenv where Pymacs is located
+
+
+(require 'virtualenv)
 (setq virtualenv-workon-starts-python nil)
-(virtualenv-workon "qudian/")
+;(add-hook 'python-mode-hook '(lambda()
+;                               ;without this,will get a error
+;                               (setq virtualenv-workon-starts-python nil)
+;                               (virtualenv-workon nil)))
+
+;; jedi
+;(autoload 'jedi:setup "jedi" nil t) 
+(require 'jedi)
+
+;(add-hook 'python-mode-hook '(lambda ()
+;                               (setq jedi:setup-keys t)  
+;                               (setq jedi:complete-on-dot t)  
+;                               (when (fboundp 'jedi:setup) (jedi:setup))  ))
+
+(add-hook 'python-mode-hook '(lambda ()
+                               (setq jedi:setup-keys t)
+                               (setq jedi:complete-on-dot t)
+                               (jedi:setup) ))
+
+
+;(add-hook 'python-mode-hook 'jedi:ac-setup)
+
+
 
 ;pymacs 
-(require 'pymacs) 
+;(require 'pymacs) 
 
-(defun load-pycomplete ()
-  "Load and initialize pycomplete."
-  (interactive)
-  (let* ((pyshell (py-choose-shell))
-         (path (getenv "PYTHONPATH")))
-    (setenv "PYTHONPATH" (concat
-                          (expand-file-name py-install-directory) "completion"
-                          (if path (concat path-separator path))))
-    (if (py-install-directory-check)
-        (progn
-          (setenv "PYMACS_PYTHON" (if (string-match "IP" pyshell) 
-                                      "python"
-                                    pyshell))
-          (autoload 'pymacs-apply "pymacs")
-          (autoload 'pymacs-call "pymacs")
-          (autoload 'pymacs-eval "pymacs")
-          (autoload 'pymacs-exec "pymacs")
-          (autoload 'pymacs-load "pymacs")
-          (load (concat py-install-directory "completion/pycomplete.el") nil t)
-          (add-hook 'python-mode-hook 'py-complete-initialize))
-      (error "`py-install-directory' not set, see INSTALL"))))
+;(defun load-pycomplete ()
+;  "Load and initialize pycomplete."
+;;   (interactive)
+;;   (let* ((pyshell (py-choose-shell))
+;;          (path (getenv "PYTHONPATH")))
+;;     (setenv "PYTHONPATH" (concat
+;;                           (expand-file-name py-install-directory) "completion"
+;;                           (if path (concat path-separator path))))
+;;     (if (py-install-directory-check)
+;;         (progn
+;;           (setenv "PYMACS_PYTHON" (if (string-match "IP" pyshell) 
+;;                                       "python"
+;;                                     pyshell))
+;;           (autoload 'pymacs-apply "pymacs")
+;;           (autoload 'pymacs-call "pymacs")
+;;           (autoload 'pymacs-eval "pymacs")
+;;           (autoload 'pymacs-exec "pymacs")
+;;           (autoload 'pymacs-load "pymacs")
+;;           (load (concat py-install-directory "completion/pycomplete.el") nil t)
+;;           (add-hook 'python-mode-hook 'py-complete-initialize))
+;;       (error "`py-install-directory' not set, see INSTALL"))))
 
-(eval-after-load 'pymacs '(load-pycomplete))
+;; (eval-after-load 'pymacs '(load-pycomplete))
+
+
 
 ;; pyflakes flymake integration
 ;; http://stackoverflow.com/a/1257306/347942
-(when (load "flymake" t)
-  (defun flymake-pyflakes-init ()
-    (let* ((temp-file (flymake-init-create-temp-buffer-copy
-                       'flymake-create-temp-inplace))
-           (local-file (file-relative-name
-                        temp-file
-                        (file-name-directory buffer-file-name))))
-      (list "pycheckers" (list local-file))))
-  (add-to-list 'flymake-allowed-file-name-masks
-               '("\\.py\\'" flymake-pyflakes-init)))
-(add-hook 'python-mode-hook 'flymake-mode)
-(load-library "flymake-cursor")  ;在minibuffer显示错误信息
-(custom-set-faces
-     '(flymake-errline ((((class color)) (:underline "red"))))
-     '(flymake-warnline ((((class color)) (:underline "yellow1")))))
-;(setq flymake-no-changes-timeout 600)
+;;(setq pycheckers-command "~/.emacs.d/pycheckers")
+
+  (when (load "flymake" t)
+    (defun flymake-pyflakes-init ()
+      (let* ((temp-file (flymake-init-create-temp-buffer-copy
+                         'flymake-create-temp-inplace))
+             (local-file (file-relative-name
+                          temp-file
+                          (file-name-directory buffer-file-name))))
+        (list "/usr/local/bin/pyflakes" (list local-file))))
+    (add-to-list 'flymake-allowed-file-name-masks
+                 '("\\.py\\'" flymake-pyflakes-init)))
+  (add-hook 'python-mode-hook 'flymake-mode)
+  (load-library "flymake-cursor")  ;在minibuffer显示错误信息
+
+  (custom-set-faces
+       '(flymake-errline ((((class color)) (:underline "red"))))
+       '(flymake-warnline ((((class color)) (:underline "yellow2")))))
+ (setq flymake-no-changes-timeout 600)
 
 
 (provide 'init-python)

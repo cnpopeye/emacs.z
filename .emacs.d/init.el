@@ -27,6 +27,9 @@
 (require 'auto-complete-config)
 (setq ac-dictionary-files (list (concat user-emacs-directory ".dict")))
 (ac-config-default)
+(local-set-key (kbd "M-/") 'semantic-complete-analyze-inline)
+(local-set-key "." 'semantic-complete-self-insert)
+(local-set-key ">" 'semantic-complete-self-insert)
 ;; hack to fix ac-sources after pycomplete.el breaks it
 (add-hook 'python-mode-hook
           '(lambda()

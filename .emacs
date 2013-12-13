@@ -10,8 +10,27 @@
       (normal-top-level-add-subdirs-to-load-path)))
 (delete-dups load-path))
 
+(defun uniquify-region-lines (beg end)
+    "Remove duplicate adjacent lines in region."
+    (interactive "*r")
+    (save-excursion
+      (goto-char beg)
+      (while (re-search-forward "^\\(.*\n\\)\\1+" end t)
+        (replace-match "\\1"))))
+  
+  (defun uniquify-buffer-lines ()
+    "Remove duplicate adjacent lines in the current buffer."
+    (interactive)
+    (uniquify-region-lines (point-min) (point-max)))
+
 ;; init package 
-(require 'init-package)
+;(require 'init-package)
+
+;; init el-get
+(require 'init-el-get)
+
+;; epc jedi
+(require 'epc)
 
 ; 字体、tab、shell、sr-speedbar等设置
 (require 'init-misc)
@@ -52,3 +71,10 @@
 (desktop-load-default);;防止重复load，22以后版本无此问题
 (desktop-save-mode 1)
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(safe-local-variable-values (quote ((virtualenv-workon . \"defalut\"))))
+ '(session-use-package t nil (session)))

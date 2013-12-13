@@ -1,23 +1,39 @@
 
 ;; ----- smex-history -----
 (
- dired
+ el-get-install
  load-library
- replace-string
- emacs-init-time
- Electric-command-history-redo-expression
- load-file
- cd
+ virtualenv-workon
+ virtualenv-deactivate
+ el-get-remove
+ el-get-list-packages
+ package-install
 )
 
 ;; ----- smex-data -----
 (
- (dired . 7)
- (load-file . 1)
- (load-library . 6)
- (replace-string . 5)
+ (dired . 8)
+ (load-file . 2)
+ (load-library . 17)
+ (replace-string . 143)
  (Electric-command-history-redo-expression . 1)
- (template-new-file . 6)
- (virtualenv-workon . 1)
+ (template-new-file . 19)
+ (virtualenv-workon . 52)
  (emacs-init-time . 1)
+ (javascript-mode . 4)
+ (package-list-packages . 1)
+ (markdown-mode . 6)
+ (org-mode . 2)
+ (calc . 2)
+ (replace-regexp . 27)
+ (uniq-lines . 4)
+ (uniquify-region-lines . 1)
+ (uniquify-buffer-lines . 3)
+ (el-get-install . 12)
+ (package-install . 7)
+ (auto-complete-mode . 1)
+ (el-get-remove . 5)
+ (virtualenv-current . 1)
+ (el-get-list-packages . 1)
+ (virtualenv-deactivate . 3)
 )
