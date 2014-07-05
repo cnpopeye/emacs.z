@@ -42,7 +42,17 @@
     (setq frame-title-format "%b@Emacs -- %f") 
 
     ;;设置字体
-    (set-default-font "文泉驿等宽微米黑-14")
+;    (set-default-font "STKaiti-14")
+
+;; Setting English Font
+(set-face-attribute
+ 'default nil :font "monofur 14")
+
+;; Chinese Font
+(dolist (charset '(kana han symbol cjk-misc bopomofo))
+  (set-fontset-font (frame-parameter nil 'font)
+                    charset
+                    (font-spec :family "STKaiti" :size 14)))
 
 
 ;;主题设置
