@@ -136,7 +136,7 @@
 
 ;; ido-mode is like magic pixie dust!
 (ido-mode t)
-(ido-ubiquitous t)
+;(ido-ubiquitous t)
 (setq ido-enable-prefix nil
       ido-enable-flex-matching t
       ido-auto-merge-work-directories-length nil
@@ -158,6 +158,11 @@
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 (add-hook 'markdown-mode-hook 'turn-off-auto-fill)
+
+;;插入当前日期时间
+(defun insert-current-time ()
+  (interactive)
+  (insert (format-time-string "%Y-%m-%d %H:%M:%S" (current-time))))
 
 ;;;;;;;; trac wiki
 ;(require 'w3m-load)
