@@ -1,1 +1,0 @@
-/Users/zc/data/go/misc/emacs/go-mode.el

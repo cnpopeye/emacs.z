@@ -1,0 +1,73 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/zc/.emacs.d/el-get/package/elpa/" . "jedi-0.1.2/")
+ ("/Users/zc/.emacs.d/el-get/package/" . "elpa/")
+ ("/Users/zc/.emacs.d/el-get/" . "package/")
+ ("/Users/" . "zc/")
+ ("/Users/zc/.emacs.d/" . "el-get/")
+ ("/Users/zc/workspace/" . "daily-daily/")
+ ("/Users/zc/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/zc/"
+ "/Users/zc/OneDrive/Dropbox/emacs.z/.emacs.d/"
+ "/Users/zc/.emacs.d/"
+ "/Users/zc/OneDrive/Dropbox/emacs.z/.emacs.d/el-get/package/elpa/jedi-0.1.2/"
+ "/Users/zc/.emacs.d/el-get/package/elpa/jedi-0.1.2/"
+ "/Users/zc/workspace/daily-daily/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ ".emacs"
+ "init-dev.el"
+ "init-package.el"
+ "init-el-get.el"
+ "init-python.el"
+ "jediepcserver.py"
+ "controller.py"
+ "daily-daily.py"
+ "init-misc.el"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/zc/" (21435 42877 0 0) "workspace/" "Public/" "Pictures/" "OneDrive/" "Music/" "Movies/" "Library/" "Google Drive/" "Dropbox" "Downloads/" "Documents/" "Desktop/" "data/" "Applications/" "AndroidstudioProjects/" ".virtualenvs/" ".viminfo" ".Trash/" ".subversion/" ".ssh/" ".smex-items" ".recentf~" ".recentf" ".pip/" ".ido.last~" ".ido.last" ".emacs.d/" ".emacs" ".DS_Store" ".dropbox-master/" ".dropbox/" ".config/" ".CFUserTextEncoding" ".bash_profile" ".bash_history" ".android/" "../" "./")
+
+ ("/Users/zc/OneDrive/Dropbox/emacs.z/.emacs.d/" (21435 41468 0 0) "url/" "tramp" "templates/" "site-lisp/" "pycheckers" "init.el" "init-tabbar.el~" "init-tabbar.el" "init-rope.el~" "init-rope.el" "init-python.el~" "init-python.el" "init-package.el~" "init-package.el" "init-misc.el~" "init-misc.el" "init-go.el~" "init-go.el" "init-el-get.el~" "init-el-get.el" "init-dev.el~" "init-dev.el" "init-bindings.el" "emacs-desktop" "elpa/" "el-get/" "ede-projects.el" "auto-save-list/" "ac-comphist.dat" "abbrev_defs" ".smex-items" ".session" ".emacs.desktop" "#init-package.el#" "#init-bindings.el#" "../" "./")
+
+ ("/Users/zc/OneDrive/Dropbox/emacs.z/" (21435 41649 0 0) "TAGS" "README.md" ".gitignore~" ".gitignore" ".git/" ".emacs~" ".emacs.d/" ".emacs" "../" "./")
+
+ ("/Users/zc/.emacs.d/" (21435 41468 0 0) "url/" "tramp" "templates/" "site-lisp/" "pycheckers" "init.el" "init-tabbar.el~" "init-tabbar.el" "init-rope.el~" "init-rope.el" "init-python.el~" "init-python.el" "init-package.el~" "init-package.el" "init-misc.el~" "init-misc.el" "init-go.el~" "init-go.el" "init-el-get.el~" "init-el-get.el" "init-dev.el~" "init-dev.el" "init-bindings.el" "emacs-desktop" "elpa/" "el-get/" "ede-projects.el" "auto-save-list/" "ac-comphist.dat" "abbrev_defs" ".smex-items" ".session" ".emacs.desktop" "#init-package.el#" "#init-bindings.el#" "../" "./")
+
+ ("/Users/zc/workspace/daily-daily/" (21435 27315 0 0) "utils.py~" "utils.pyc" "utils.py" "tornado_api/" "TODO~" "TODO" "templates/" "static/" "requirements.txt~" "requirements.txt" "README.md" "models.py~" "models.pyc" "models.py" "INSTALL" "favicon.ico" "evernote/" "dbhandler/" "daily-daily.py~" "daily-daily.py" "controller.py~" "controller.pyc" "controller.py" "config.py~" "config.pyc" "config.py.sample~" "config.py.sample" "config.py" ".idea/" ".gitmodules" ".gitignore" ".git/" ".DS_Store" "#controller.py#" "../" "./")
+
+ ("/Users/zc/OneDrive/Dropbox/emacs.z/.emacs.d/el-get/package/elpa/jedi-0.1.2/" (21435 25276 0 0) "tryout-jedi.elc" "tryout-jedi.el" "requirements.txt" "Makefile" "jediepcserver.py" "jedi.elc" "jedi.el" "jedi-pkg.elc" "jedi-pkg.el" "jedi-autoloads.el~" "jedi-autoloads.el" "../" "./")
+
+ ("/Users/zc/.emacs.d/el-get/package/elpa/jedi-0.1.2/" (21435 24539 0 0) "tryout-jedi.elc" "tryout-jedi.el" "requirements.txt" "Makefile" "jediepcserver.py" "jedi.elc" "jedi.el" "jedi-pkg.elc" "jedi-pkg.el" "jedi-autoloads.el~" "jedi-autoloads.el" "../" "./")
+
+ ("/Users/zc/.emacs.d/el-get/package/elpa/" (21420 60969 0 0) "smex-2.1/" "popup-0.5/" "markdown-mode-2.0/" "jedi-0.1.2/" "ido-ubiquitous-2.9/" "fuzzy-0.1/" "epc-0.1.1/" "deferred-0.3.1/" "ctable-0.1.1/" "concurrent-0.3.1/" "company-0.6.12/" "autopair-0.3/" "auto-complete-1.4/" "archives/" "../" "./")
+
+ ("/Users/zc/.emacs.d/el-get/package/" (21420 60966 0 0) "elpa/" "../" "./")
+
+ ("/Users/zc/.emacs.d/elpa/" (21426 32673 0 0) "smex-20120915.2041/" "markdown-mode-20130309.1151/" "ido-ubiquitous-20121214.2145/" "git-blame-readme.txt" "fuzzy-20120323.1044/" "autopair-20121123.1829/" "auto-complete-readme.txt" "archives/" "../" "./")
+
+ ("/Users/" (21418 59590 0 0) "zc/" "Shared/" "Guest/" ".localized" "../" "./")
+
+ ("/Users/zc/.emacs.d/el-get/" (21426 32713 0 0) "virtualenv/" "smex/" "recipes/" "python-mode/" "package/" "markdown-mode/" "java-mode-indent-annotations/" "ido-ubiquitous/" "fuzzy/" "el-get/" "el-expectations/" "deferred/" "autopair/" ".status.el.old" ".status.el" ".loaddefs.el~" ".loaddefs.elc" ".loaddefs.el" "../" "./")
+
+ ("/Users/zc/workspace/" (21420 58627 0 0) "PushDemo/" "moga/" "learn/" "daily-daily/" "c.maxima-api/" "c.maxima/" "bangbang/" "0dayapp-api/" "0dayapp/" ".DS_Store" "../" "./")
+
+ ("/Users/zc/OneDrive/" (21432 2728 0 0) "词库-LP.rtf" "翻译规范/" "文档/" "收藏夹/" "征信业务市场调研分析.docx" "共享收藏夹/" "公开/" "Icon
+" "Dropbox/" ".DS_Store" "../" "./")
+
+ ("/Users/zc/OneDrive/Dropbox/" (21426 32681 0 0) "车辆保养/" "确认书 (员工期权及持股部分) (修改).zip" "确认书 (员工期权及持股部分) (修改)/" "灵璧典故" "WS_BinaryComparison_100923 GFan-增资协议 Haiwen Draft-100925 GFan-增资协议 签署稿.doc" "travel/" "safari_extension.cer" "profiles/" "linux_profile/" "install.log~" "install.log" "Icon
+" "emacs.z/" "eclipse_preference.epf" "eclipse_p.epf~" "eclipse_p.epf" "docs/" "ctrip/" "CertificateSigningRequest.certSigningRequest" "2_114042600353_CHAO.pdf" "1_114042600353_QIAOZHI.pdf" "100925 GFan-增资协议 签署稿.doc" ".git-completion.bash" ".DS_Store" ".dropbox.cache/" ".dropbox" ".bash_profile~" ".bash_profile" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
